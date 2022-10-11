@@ -1,2 +1,3 @@
 # Meu repositório de exercícios
-Exercícios 2.2
+
+Aqui vou estar postando os exercícios realizados por mim durante minhas aulas do curso de Desenvolvimento Web na Trybe
