@@ -1,0 +1,26 @@
+$ mkdir Exercicios_Trybe
+$ cd Exercicios_Trybe
+$ git init
+$ code .
+$ touch README.md
+$ git add .
+$ git commit -m "Criei o arquivo README.md"
+$ git checkout -b adiciona-readme
+$ cat > README.md
+$ git checkout main
+$ git merge adiciona-readme
+$ git checkout -b atualiza-readme
+$ touch infos.txt
+$ git add .
+$ git commit -m "Criei o arquivo infos.txt"
+$ cat > infos.txt
+$ git add .
+$ git commit -m "Adicionei meu nome e sobrenome em infos.txt"
+$ git checkout -b adiciona-infos
+$ cat > README.md
+$ git add .
+$ git commit -m "Criei o arquivo README.md"
+$ git checkout atualiza-readme
+$ git merge adiciona-infos
+$ git checkout main
+$ git merge atualiza-readme
