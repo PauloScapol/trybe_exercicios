@@ -1,0 +1,1 @@
+Nesse primeiro módulo do cruso da Trybe (Fundamentos), aprenderei tudo o que eu preciso saber para iniciar minha carreira no mundo do desenvolvimento Web, virando uma pessoa preparada para os módulos de front-end e back-end.
