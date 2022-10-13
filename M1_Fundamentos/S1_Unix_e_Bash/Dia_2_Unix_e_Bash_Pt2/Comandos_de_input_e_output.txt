@@ -1,0 +1,17 @@
+$ mkdir unix_tests_skills
+$ cd unix_tests_skills/
+$ cat > skills2.txt
+$ cat >> skills2.txt
+$ sort skills2.txt 
+$ wc -l skills2.txt 
+$ sort skills2.txt | head -3 > top_skills.txt
+$ ls
+$ cat top_skills.txt 
+$ cat > phrases2.txt
+$ grep -ni br phrases2.txt 
+$ grep -niv br phrases2.txt 
+$ cat >> phrases2.txt
+$ cat > countries.txt
+$ cat phrases2.txt countries.txt > bunch_of_thing.txt
+$ sort < bunch_of_thing.txt > bunch_of_things.txt
+$ cat bunch_of_things.txt

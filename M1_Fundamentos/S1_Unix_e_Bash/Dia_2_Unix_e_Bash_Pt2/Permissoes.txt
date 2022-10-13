@@ -1,0 +1,11 @@
+$ mkdir unix_tests_permissions
+$ cd unix_tests_permissions/
+$ ls -l
+$ touch arquivo_teste.txt
+$ ls -l
+$ chmod a+rw arquivo_teste.txt 
+$ ls -l
+$ chmod a-w arquivo_teste.txt 
+$ ls -l
+$ chmod 644 arquivo_teste.txt 
+$ ls -l
