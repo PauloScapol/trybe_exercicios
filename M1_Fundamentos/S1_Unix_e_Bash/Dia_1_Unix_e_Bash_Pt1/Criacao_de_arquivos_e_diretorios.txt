@@ -1,0 +1,31 @@
+$ mkdir unix_tests
+$ cd unix_tests
+$ touch trybe.txt
+$ ls
+$ cp trybe.txt trybe_backup.txt
+$ ls
+$ mv trybe.txt trybe2.txt
+ls
+$ mkdir backup
+$ ls
+$ pwd
+$ mv trybe_backup.txt /home/pauloscapol/Trybe/unix_tests/backup
+$ ls
+$ mkdir backup2
+$ ls
+$ cd backup
+$ mv trybe_backup.txt /home/pauloscapol/Trybe/unix_tests_backup2
+$ cd ..
+$ cd backup2
+$ ls
+$ cd ..
+$ ls
+$ rmdir backup
+$ ls
+$ mv backup2 backup
+$ ls
+$ pwd
+$ ls
+$ rm -rf backup
+$ ls
+$ clear
