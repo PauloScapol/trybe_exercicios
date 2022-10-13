@@ -1,0 +1,14 @@
+$ ps
+$ sleep 30 &
+$ ps
+$ kill 16547
+$ sleep 30
+$ bg
+$ sleep 300 &
+$ sleep 100
+$ sleep 200
+$ fg %3
+$ bg %4
+$ kill -9 %3 %4 %5
+$ jobs
+$ jobs
