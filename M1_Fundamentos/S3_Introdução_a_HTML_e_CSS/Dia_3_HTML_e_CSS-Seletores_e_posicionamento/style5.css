@@ -34,3 +34,23 @@ li.primeiros3 {
 li.java {
     background-color: pink;
 }
+
+ul#aliados {
+    font-weight: bold;
+}
+
+li#orange:hover {
+    color: orange;
+}
+
+li#green:hover {
+    color: green;
+}
+
+li#black:hover {
+    color: black;
+}
+
+li#yellow:hover {
+    color: yellow;
+}
