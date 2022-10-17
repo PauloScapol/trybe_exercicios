@@ -26,3 +26,11 @@ li {
 li.italica {
     font-weight: bold;
 }
+
+li.primeiros3 {
+    color: blue;
+}
+
+li.java {
+    background-color: pink;
+}
