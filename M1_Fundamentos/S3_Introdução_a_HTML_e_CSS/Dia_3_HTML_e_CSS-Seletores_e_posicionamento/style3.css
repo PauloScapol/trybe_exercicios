@@ -9,3 +9,7 @@ li:hover {
 li:active {
     font-family: 'Courier New', Courier, monospace;
 }
+
+ol, ul {
+    list-style: none;
+}
