@@ -39,18 +39,18 @@ ul#aliados {
     font-weight: bold;
 }
 
-li#orange:hover {
+a#orange:hover {
     color: orange;
 }
 
-li#green:hover {
+a#green:hover {
     color: green;
 }
 
-li#black:hover {
+a#black:hover {
     color: black;
 }
 
-li#yellow:hover {
+a#yellow:hover {
     color: yellow;
 }
