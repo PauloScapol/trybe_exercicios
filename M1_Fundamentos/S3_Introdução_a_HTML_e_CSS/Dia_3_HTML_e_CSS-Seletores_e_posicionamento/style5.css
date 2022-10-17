@@ -18,3 +18,11 @@ h1#italica {
     font-size: 40px;
     border: 1px solid black;
 }
+
+li {
+    font-size: 20px;
+}
+
+li.italica {
+    font-weight: bold;
+}
