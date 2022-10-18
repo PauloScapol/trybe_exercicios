@@ -1,0 +1,16 @@
+#titulo-header {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: yellow;
+}
+
+header {
+    border: 5px solid yellow;
+    background-image: url(https://blog.apnic.net/wp-content/uploads/2020/09/mantis-shrimp_banner-555x202.jpeg?v=5eb65f0e4d2646779510b27168650f67);
+    background-position: 100% 100%;
+    background-size: contain;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
