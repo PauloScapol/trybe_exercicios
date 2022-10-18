@@ -9,6 +9,15 @@
         text-align: center;
       }
 
+      section.secao-podium {
+        text-align: center;
+      }
+
+      ul.podium {
+        display: inline-block;
+        text-align: center;
+      }
+
       .first {
         background-color: rgb(235, 200, 84);
         font-size: 20px;
@@ -16,6 +25,7 @@
         text-align: center;
         width: 200px;
         display: block;
+        margin-left: 200px;
       }
 
       .second {
@@ -24,7 +34,7 @@
         height: 50px;
         text-align: center;
         width: 300px;
-        display: block;
+        display: inline-block;
       }
 
       .third {
@@ -33,7 +43,11 @@
         height: 50px;
         text-align: center;
         width: 300px;
-        display: block;
+        display: inline-block;
+      }
+
+      h3 {
+        text-align: center;
       }
 
     </style>
@@ -42,8 +56,8 @@
     <header>
       <h1>Hackathon Results</h1>
     </header>
-    <section>
-      <ul>
+    <section class="secao-podium">
+      <ul class="podium">
         <li class="first">1º - Equipe 1</li>
         <li class="second">2º - Equipe 2</li>
         <li class="third">3º - Equipe 3</li>
