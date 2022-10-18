@@ -68,48 +68,32 @@ header {
             margin-right: 100px;
         }
 
-    .blocos-metade {
-        text-align: center;
-    }
-        
-        #info1 {
-            margin: 10px;
-            padding: 5px;
-            border: 2px solid black;
-            display: inline-block;
-            width: 50%;
-        }
-
-        #info2 {
-            margin: 10px;
-            padding: 5px;
-            border: 2px solid black;
-            display: inline-block;
-            width: 50%;
-        }
-
-#info3 {
-    margin: 10px;
-    padding: 5px;
-    border: 2px solid black;
-    display: inline-block;
+#soco {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#info4 {
-    margin: 10px;
-    padding: 5px;
-    border: 2px solid black;
+
+.info {
     display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid black;
     width: 50%;
 }
 
 .titulo-secoes {
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 .para-secoes {
+    margin-top: 10px;
     font-size: 17px;
     text-align: justify;
 }
