@@ -68,6 +68,17 @@ header {
             margin-right: 100px;
         }
 
+#referencias {
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid black;
+    display: block;
+}
+
+#ref-bib {
+    text-align: center;
+}
+
 .imgs-info {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -77,13 +88,12 @@ header {
     margin-right: auto;
 }
 
-
 .info {
     display: inline-block;
     padding: 5px;
     margin: 10px;
     border: 2px solid black;
-    width: 50%;
+    width: 47%;
 }
 
 .titulo-secoes {
