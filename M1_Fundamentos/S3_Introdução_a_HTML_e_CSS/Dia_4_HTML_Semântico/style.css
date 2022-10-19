@@ -130,5 +130,7 @@ header {
     background-color: lightseagreen;
     border: 5px solid seagreen;
     text-align: center;
+    font-size: 25px;
+    font-weight: bold;
     margin-top: 10px;
 }
