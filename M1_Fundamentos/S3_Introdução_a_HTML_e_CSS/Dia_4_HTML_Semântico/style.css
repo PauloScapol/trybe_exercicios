@@ -16,6 +16,17 @@ header {
     margin-bottom: 10px;
 }
 
+#aside {
+    display: block;
+    width: 20%;
+    float: right;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid black;
+    font-style: italic;
+    background-color: lightseagreen;
+}
+
 .nav {
     background-color: lightseagreen;
     border: 5px solid seagreen;
@@ -34,7 +45,7 @@ header {
 
 .group {
     border: 5px solid seagreen;
-    width: fit-content;
+    width: 75%;
 }
 
 #titulo-artigo {
@@ -68,6 +79,10 @@ header {
             margin-right: 100px;
         }
 
+    #secoes-bloco {
+        text-align: center;
+    }
+
 #referencias {
     margin: 10px;
     padding: 5px;
@@ -77,6 +92,10 @@ header {
 
 #ref-bib {
     text-align: center;
+}
+
+#video {
+    list-style-type: none;
 }
 
 .imgs-info {
@@ -93,7 +112,7 @@ header {
     padding: 5px;
     margin: 10px;
     border: 2px solid black;
-    width: 47%;
+    width: 45%;
 }
 
 .titulo-secoes {
