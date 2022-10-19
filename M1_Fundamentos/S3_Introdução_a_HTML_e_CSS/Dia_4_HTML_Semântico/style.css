@@ -17,14 +17,12 @@ header {
 }
 
 #aside {
-    display: block;
-    width: 20%;
+    width: 23%;
     float: right;
-    margin: 10px;
-    padding: 5px;
-    border: 2px solid black;
+    padding-bottom: 1050px;
+    border: 5px solid seagreen;
     font-style: italic;
-    background-color: lightseagreen;
+    background-color: lightgrey;
 }
 
 .nav {
@@ -44,6 +42,7 @@ header {
 }
 
 .group {
+    display: inline-block;
     border: 5px solid seagreen;
     width: 75%;
 }
@@ -125,4 +124,11 @@ header {
     margin-top: 10px;
     font-size: 17px;
     text-align: justify;
+}
+
+#footer {
+    background-color: lightseagreen;
+    border: 5px solid seagreen;
+    text-align: center;
+    margin-top: 10px;
 }
