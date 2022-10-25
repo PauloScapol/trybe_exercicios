@@ -1,14 +1,31 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let soma = 0;
 let higherNumber = numbers[0];
+let oddNumber = 0;
 
 for (index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] > higherNumber) {
-        higherNumber = numbers[index]
+    if (numbers[index] % 2 !== 0) {
+        oddNumber += 1;
     }
 }
 
-console.log(higherNumber);
+if (oddNumber > 0) {
+    console.log(oddNumber);
+}
+else {
+    console.log("Nenhum valor ímpar encontrado");
+}
+
+
+// for (index = 0; index < numbers.length; index += 1) {
+//     if (numbers[index] > higherNumber) {
+//         higherNumber = numbers[index]
+//     }
+// }
+
+// console.log(higherNumber);
+
+
 
 // for (let index = 0; index < numbers.length; index += 1) {
 //     soma += numbers[index];
