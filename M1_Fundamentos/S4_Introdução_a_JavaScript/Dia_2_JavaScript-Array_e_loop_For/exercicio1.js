@@ -5,18 +5,18 @@ let oddNumber = 0;
 let lowestNumber = numbers[0];
 let newNumbers = [0];
 
-for (index = 1; index < 26; index += 1) {
+for (let index = 1; index < 26; index += 1) {
     newNumbers.push(index);
 }
 
-for (index1 = 0; index1 < newNumbers.length; index1 += 1) {
+for (let index1 = 0; index1 < newNumbers.length; index1 += 1) {
     console.log(newNumbers[index1]/2);
 }
 
 
 
 
-// for (index = 0; index < numbers.length; index += 1) {
+// for (let index = 0; index < numbers.length; index += 1) {
 //     if (lowestNumber > numbers[index]) {
 //         lowestNumber = numbers[index];
 //     }
@@ -27,7 +27,7 @@ for (index1 = 0; index1 < newNumbers.length; index1 += 1) {
 
 
 
-// for (index = 0; index < numbers.length; index += 1) {
+// for (let index = 0; index < numbers.length; index += 1) {
 //     if (numbers[index] % 2 !== 0) {
 //         oddNumber += 1;
 //     }
@@ -43,7 +43,7 @@ for (index1 = 0; index1 < newNumbers.length; index1 += 1) {
 
 
 
-// for (index = 0; index < numbers.length; index += 1) {
+// for (let index = 0; index < numbers.length; index += 1) {
 //     if (numbers[index] > higherNumber) {
 //         higherNumber = numbers[index]
 //     }
