@@ -5,4 +5,4 @@ for (let index = 0; index < numbers.length; index += 1) {
     soma += numbers[index];
 }
 
-console.log(soma);
+console.log(soma/numbers.length);
