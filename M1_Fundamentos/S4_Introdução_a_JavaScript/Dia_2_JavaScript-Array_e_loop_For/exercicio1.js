@@ -3,14 +3,25 @@ let soma = 0;
 let higherNumber = numbers[0];
 let oddNumber = 0;
 let lowestNumber = numbers[0];
+let newNumbers = [0];
 
-for (index = 0; index < numbers.length; index += 1) {
-    if (lowestNumber > numbers[index]) {
-        lowestNumber = numbers[index];
-    }
+for (index = 1; index < 26; index += 1) {
+    newNumbers.push(index);
 }
 
-console.log(lowestNumber);
+console.log(newNumbers);
+
+
+
+
+// for (index = 0; index < numbers.length; index += 1) {
+//     if (lowestNumber > numbers[index]) {
+//         lowestNumber = numbers[index];
+//     }
+// }
+
+// console.log(lowestNumber);
+
 
 
 
