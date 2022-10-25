@@ -1,1 +1,7 @@
-let factorialDez = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+let factorial = 1;
+
+for (let index = 1; index <= 10; index += 1) {
+    factorial *= index;
+}
+
+console.log(factorial);
