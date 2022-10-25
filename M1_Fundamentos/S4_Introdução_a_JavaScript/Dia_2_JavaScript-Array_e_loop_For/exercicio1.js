@@ -9,7 +9,9 @@ for (index = 1; index < 26; index += 1) {
     newNumbers.push(index);
 }
 
-console.log(newNumbers);
+for (index1 = 0; index1 < newNumbers.length; index1 += 1) {
+    console.log(newNumbers[index1]/2);
+}
 
 
 
