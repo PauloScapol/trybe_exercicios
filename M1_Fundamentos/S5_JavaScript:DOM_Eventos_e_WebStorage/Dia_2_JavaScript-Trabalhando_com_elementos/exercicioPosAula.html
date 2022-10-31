@@ -97,6 +97,11 @@
         }
         sectionRightSection.appendChild(listaNumeros);
     // 9. Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
+        for (let index = 1; index <= 3; index += 1) {
+            const tituloH3 = document.createElement('h3');
+            tituloH3.innerHTML = 'Show ' + index;
+            main.appendChild(tituloH3);
+        }
 
     // 10. Adicione a classe title na tag h1 criada;
     // 11. Adicione a classe description nas 3 tags h3 criadas;
