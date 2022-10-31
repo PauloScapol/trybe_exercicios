@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercício - Criando Elementos</title>
+    </head>
+    <body>
+        <main id="paiDoPai">
+            <section id="pai">
+                Pai<br> <!-- Esse não -->
+                <section id="primeiroFilho"></section>
+                Primeiro Filho<br>
+                <section id="elementoOndeVoceEsta">
+                    Elemento onde você está<br> <!-- Esse não -->
+                    <section id="primeiroFilhoDoFilho"></section>
+                    Primeiro filho do filho<br> <!-- Esse não -->
+                    <section id="segundoEUltimoFilhoDoFilho"></section>
+                    Segundo e último filho do filho<br>
+                </section>
+                Atenção!<br>
+                <section id="terceiroFilho"></section>
+                Terceiro filho<br>
+                <section id="quartoEUltimoFilho"></section>
+                Quarto e último filho<br>
+            </section>
+        </main>
+        <script>
+            // Remova todos os filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho
+                const pai = document.getElementById('pai');
+                const filhos = pai.childNodes;
+
+                for (let index = 0; index < filhos.length; index += 1) {
+                    const filho = filhos[index];
+
+                    if (filho.id !== 'elementoOndeVoceEsta') {
+                        filho.remove();
+                    }
+                }
+
+                const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+                segundoEUltimoFilhoDoFilho.remove();
+                
+                // const paiDoPai = document.getElementById('paiDoPai');
+                
+                // for (let index = 0; index < paiDoPai.length; index += 1) {
+                //     let filho = paiDoPai[index];
+
+                //     if (filho.id.includes('pai') || filho.id.includes('elementoOndeVoceEsta') || filho.id.includes('primeiroFilhoDoFilho')) {
+                //         filho = filho;
+                //     } else {
+                //         paiDoPai.removeChild(filho);
+                //     }
+                // }
+        </script>
+    </body>
+</html>
