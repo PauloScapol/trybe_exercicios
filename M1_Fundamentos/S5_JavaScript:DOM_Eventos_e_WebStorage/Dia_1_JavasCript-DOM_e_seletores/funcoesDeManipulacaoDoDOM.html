@@ -66,7 +66,11 @@
         }
         corQuadradoTexto();
     // 4. Crie e execute uma função que corrija o texto da tag <h1>.
-
+        function mudaTitulo () {
+            let titulo = document.getElementsByTagName('h1')[0];
+            titulo.innerText = 'Exercício - JavaScript';
+        }
+        mudaTitulo();
     // 5. Crie e execute uma função que modifique o texto da primeira tag <p> para maiúsculo.
     // 6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
     </script>
