@@ -25,13 +25,13 @@ const createDaysOfTheWeek = () => {
 // * Os dias 4, 11, 18 e 25 são sextas-feiras. Eles devem conter a classe day e a classe friday. 
 //   Ex: <li class="day friday">4</li>.
 
-const decemberDaysList = ['', '', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+const novemberDaysList = [30, 31, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
 
 const calendarioDinamico = () => {
     let buscarListaDias = document.querySelector('#days');
 
-    for (let index = 0; index < decemberDaysList.length; index += 1) {
-        let dia = decemberDaysList[index];
+    for (let index = 0; index < novemberDaysList.length; index += 1) {
+        let dia = novemberDaysList[index];
         let itemDia = document.createElement('li');
         itemDia.innerHTML = dia;
 
@@ -42,7 +42,7 @@ const calendarioDinamico = () => {
             itemDia.className = 'day friday';
             buscarListaDias.appendChild(itemDia);
         } else {
-            dia.className = 'day';
+            itemDia.className = 'day';
             buscarListaDias.appendChild(itemDia);
         }
 
@@ -76,7 +76,7 @@ const highlightHolidays = () => {
     let backgroundColor = 'rgb(238, 238, 238)';
     let newBackgroundColor = 'green';
     
-    const mudarCorBotao = () => {
+    chamarBotaoFeriados.addEventListener('click', () => {
         for (let index = 0; index < chamarFeriados.length; index += 1) {
             if (chamarFeriados[index].style.backgroundColor === newBackgroundColor) {
                 chamarFeriados[index].style.backgroundColor = backgroundColor;
@@ -86,8 +86,7 @@ const highlightHolidays = () => {
                 chamarFeriados[index].style.color = 'white';
             }
         }
-    }
-    chamarBotaoFeriados.addEventListener('click', mudarCorBotao);
+    });
 }
 highlightHolidays();
 
@@ -107,3 +106,47 @@ const criarBotaoSexta = (nomeBotao) => {
     chamarBotao.appendChild(botaoSexta);
 }
 criarBotaoFeriados('Sexta-feira');
+
+// Parte 5
+// * Implemente uma função que modifica o texto exibido nos dias que são Sexta-feira;
+// * Adicione ao botão “Sexta-feira” um evento de “click” e modifique o texto a ser exibido nos dias que são sextas-feiras.
+// const highlightFridays = (arraySextas) => {
+//     let chamarBotaoSexta = document.querySelector('#btn-friday');
+//     let chamarSexta = document.getElementsByClassName('friday');
+//     let sextou = 'SEXTOU!!';
+
+//     chamarBotaoSexta?.addEventListener('click', () => {
+//         for (let index = 0; index < chamarSexta.length; index += 1) {
+//             if (chamarSexta[index].innerHTML !== sextou) {
+//                 chamarSexta[index].innerHTML = sextou;
+//             } else {
+//                 chamarSexta[index].innerHTML = arraySextas[index];
+//             }
+//         }
+//     });
+// }
+// let sextasNovembro = [4, 11, 18, 25];
+// highlightFridays(sextasNovembro);
+
+// Parte 6
+// * Implemente duas funções que criem um efeito de “zoom”;
+// * Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o 
+//   ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+const aumentarDia = () => {
+    let dias = document.querySelector('#days');
+    dias.addEventListener('mouseover', (event) => {
+        event.target.style.fontSize = '30px';
+        event.target.style.fontWeight = '600';
+    });
+}
+
+const diminuirDia = () => {
+    let dias = document.querySelector('#days');
+    dias.addEventListener('mouseout', (event) => {
+        event.target.style.fontSize = '20px';
+        event.target.style.fontWeight = '200';
+    });
+}
+
+aumentarDia();
+diminuirDia();
