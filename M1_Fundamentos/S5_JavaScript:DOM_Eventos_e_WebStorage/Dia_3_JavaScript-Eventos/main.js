@@ -42,6 +42,16 @@ myWebpage.addEventListener('dblclick', redirectPortfolio);
 
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+const changeTextColor = (event) => {
+    myWebpage.style.color = 'green';
+}
+
+const returnTextColor = (event) => {
+    myWebpage.style.color = 'unset';
+}
+
+myWebpage.addEventListener('mouseover', changeTextColor);
+myWebpage.addEventListener('mouseout', returnTextColor);
 
 // Segue abaixo um exemplo do uso de event.target:
 
