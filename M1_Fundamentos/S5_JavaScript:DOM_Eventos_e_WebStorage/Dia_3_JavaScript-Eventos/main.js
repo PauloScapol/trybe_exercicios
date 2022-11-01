@@ -34,6 +34,11 @@ input.addEventListener('input', typeBox);
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
+const redirectPortfolio = (event) => {
+    window.open('https://pauloscapol.github.io/', '_blank');
+}
+
+myWebpage.addEventListener('dblclick', redirectPortfolio);
 
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
