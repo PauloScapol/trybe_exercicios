@@ -35,17 +35,13 @@ const calendarioDinamico = () => {
         let itemDia = document.createElement('li');
         itemDia.innerHTML = dia;
 
-        if (dia === 24 || dia === 31) {
+        if (dia === 2 || dia === 15) {
             itemDia.className = 'day holiday';
             buscarListaDias.appendChild(itemDia);
-        } else if (dia === 4 || dia === 11 || dia === 18) {
+        } else if (dia === 4 || dia === 11 || dia === 18 || dia === 25) {
             itemDia.className = 'day friday';
             buscarListaDias.appendChild(itemDia);
-        } else if (dia === 25) {
-            itemDia.className = 'day holiday friday';
-            buscarListaDias.appendChild(itemDia);
-        }
-        else {
+        } else {
             dia.className = 'day';
             buscarListaDias.appendChild(itemDia);
         }
@@ -94,3 +90,20 @@ const highlightHolidays = () => {
     chamarBotaoFeriados.addEventListener('click', mudarCorBotao);
 }
 highlightHolidays();
+
+// Parte 4
+// * Implemente uma função que crie dinamicamente um botão com o nome "Sexta-feira";
+// * Sua função deve receber como parâmetro a string “Sexta-feira”;
+// * Adicione a esse botão o ID "btn-friday";
+// * Adicione esse botão como filho/filha da tag <div> com classe "buttons-container".]
+const criarBotaoSexta = (nomeBotao) => {
+    let chamarBotao = document.querySelector('.buttons-container');
+    let botaoSexta = document.createElement('button');
+    let botaoSextaID = 'btn-friday';
+
+    botaoSexta.innerHTML = nomeBotao;
+    botaoSexta.id = botaoSextaID;
+
+    chamarBotao.appendChild(botaoSexta);
+}
+criarBotaoFeriados('Sexta-feira');
