@@ -53,3 +53,44 @@ const calendarioDinamico = () => {
     }
 }
 calendarioDinamico();
+
+// Parte 2
+// * Implemente uma função que crie dinamicamente um botão com o nome “Feriados”.
+//  * Sua função deve receber um parâmetro com a string 'Feriados'.
+//  * Adicione a este botão a ID "btn-holiday".
+//  * Adicione este botão como filho/filha da tag <div> com classe "buttons-container".
+const criarBotaoFeriados = (nomeBotao) => {
+    let chamarBotao = document.querySelector('.buttons-container');
+    let botaoFeriados = document.createElement('button');
+    let botaoFeriadosID = 'btn-holiday';
+
+    botaoFeriados.innerHTML = nomeBotao;
+    botaoFeriados.id = botaoFeriadosID;
+
+    chamarBotao.appendChild(botaoFeriados);
+}
+criarBotaoFeriados('Feriados');
+
+// Parte 3
+// * Implemente uma função que muda a cor de fundo dos dias que possuem a classe "holiday".
+//  * Adicione ao botão "Feriados" um evento de "click" que altere a cor de fundo dos dias que possuem a classe "holiday".
+const highlightHolidays = () => {
+    let chamarBotaoFeriados = document.querySelector('#btn-holiday');
+    let chamarFeriados = document.getElementsByClassName('holiday');
+    let backgroundColor = 'rgb(238, 238, 238)';
+    let newBackgroundColor = 'green';
+    
+    const mudarCorBotao = () => {
+        for (let index = 0; index < chamarFeriados.length; index += 1) {
+            if (chamarFeriados[index].style.backgroundColor === newBackgroundColor) {
+                chamarFeriados[index].style.backgroundColor = backgroundColor;
+                chamarFeriados[index].style.color = 'rgb(119, 119, 119)';
+            } else {
+                chamarFeriados[index].style.backgroundColor = newBackgroundColor;
+                chamarFeriados[index].style.color = 'white';
+            }
+        }
+    }
+    chamarBotaoFeriados.addEventListener('click', mudarCorBotao);
+}
+highlightHolidays();
