@@ -1,9 +1,9 @@
 window.onload = () => {
-    const setBackgroundColor = (color) => {
-        let content = document.querySelector('.conteudo');
-        content.style.setBackgroundColor = color;
-        localStorage.setItem('backgroundColor', color);
-    }
+    // const setBackgroundColor = (color) => {
+    //     let content = document.querySelector('.conteudo');
+    //     content.style.setBackgroundColor = color;
+    //     localStorage.setItem('backgroundColor', color);
+    // }
 
     const setFontColor = (color) => {
         let paragraphs = document.querySelectorAll(".paragrafo")
@@ -37,12 +37,12 @@ window.onload = () => {
         localStorage.setItem("fontFamily", family)
     }
     
-    let botoesCorFundo = document.querySelectorAll("#cor-fundo>button")
-    for (let index = 0; index < botoesCorFundo.length; index += 1) {
-        botoesCorFundo[index].addEventListener("click", (event) => {
-            setBackgroundColor(event.target.innerHTML);
-        })
-    }
+    // let botoesCorFundo = document.querySelectorAll("#cor-fundo>button")
+    // for (let index = 0; index < botoesCorFundo.length; index += 1) {
+    //     botoesCorFundo[index].addEventListener("click", (event) => {
+    //         setBackgroundColor(event.target.innerHTML);
+    //     })
+    // }
 
     let botoesCorFonte = document.querySelectorAll("#cor-fonte>button")
     for (let index = 0; index < botoesCorFonte.length; index += 1) {
@@ -73,8 +73,8 @@ window.onload = () => {
     }
 
     const initialize = () => {
-        let backgroundColor = localStorage.getItem("backgroundColor")
-        if (backgroundColor) setBackgroundColor(backgroundColor)
+        // let backgroundColor = localStorage.getItem("backgroundColor")
+        // if (backgroundColor) setBackgroundColor(backgroundColor)
 
         let fontColor = localStorage.getItem("fontColor")
         if (fontColor) setFontColor(fontColor)
