@@ -1,0 +1,41 @@
+body {
+    margin: 10px;;
+}
+
+.preferencias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+.estilos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+
+.paragrafo {
+    display: flex;
+}
