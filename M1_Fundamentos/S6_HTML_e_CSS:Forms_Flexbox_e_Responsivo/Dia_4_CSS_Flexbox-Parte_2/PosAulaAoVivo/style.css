@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+h5 {
+    text-align: center;
+}
+
+.header-container {
+    background-color: #5C687C;
+    display: flex;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    flex-basis: 268px;
+    order: -1;
+}
+
+.menu-container {
+    display: flex;
+    flex-basis: 500px;
+    flex-grow: 1;
+    align-self: center;
+}
+
+.menu-container ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.menu-container li {
+background-size: cover;
+    font-weight: 500;
+    font-size: 1.3rem;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 700px;
+    flex-grow: 10;
+    align-content: center;
+}
+
+.movie-container h2 {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-container div {
+    align-items: center;
+    background-color: #5C687C;
+    border: black solid 1px;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    margin: 10px;
+    flex-basis: 16%;
+    flex-grow: 1;
+}
+
+.aside-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    flex-basis: 350px;
+    align-self: center;
+    flex-grow: 1;
+}
+
+.aside-container h3, h4 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.aside-container p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+#black-clover {
+    background-image: url(https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/0273e80242d80b0218f640e038269c18.jpeg);
+    background-size: cover;
+}
+
+#shield-hero {
+    background-image: url(https://sm.ign.com/ign_br/screenshot/default/the-rising-of-the-shield-hero-2-capa_8j8z.png);
+    background-size: cover;
+}
+
+#mob-psycho {
+    background-image: url(https://3.bp.blogspot.com/--cBQOEaOevM/XDj7NcfJ5uI/AAAAAAAAAMU/OXvuRPZR1So6dSrsiaioFaX5vvIioUhEACKgBGAs/w4096-h2304-c/mob-psycho-100-anime-charcters-1.jpg);
+    background-size: cover;
+}
+
+#tokyo-revengers {
+    background-image: url(https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/7923a0407dbdba324c56acec9f096c13.jpeg);
+    background-size: cover;
+}
+
+#sword-art {
+    background-image: url(https://www.animeunited.com.br/oomtumtu/2020/09/BneQ1VM-1-e1600613753111.jpg);
+    background-size: cover;
+}
+
+#cells-at-work {
+    background-image: url(https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/afc54e0f81f3bc40d0fab9be27ed0dab.jpeg);
+    background-size: cover;
+}
+
+#fairy-tail {
+    background-image: url(https://hbomax-images.warnermediacdn.com/images/GYoy0UgG9-YeAHgEAAACA/tileburnedin?size=1280x720&partner=hbomaxcom&v=5413634fb8d77d9c64ad11e8a2fadb3f&host=art-gallery.api.hbo.com&language=pt-br&w=1280);
+    background-size: cover;
+    background-position: center;
+}
+
+#db-gt {
+    background-image: url(https://areajugones.sport.es/wp-content/uploads/2022/01/dragon-ball-gt-kai.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#one-piece {
+    background-image: url(https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/236f44583009506b8d9d012c4d3119a5.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#jojo {
+    background-image: url(https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/pt_BR/games/switch/j/jojos-bizarre-adventure-all-star-battle-r-switch/hero);
+    background-size: cover;
+    background-position: center;
+}
+
+#tokyo-ghoul {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxJQLIn7BUQ__VbLJ3QR3SjdFGBGGweS-tJELosKr4-oSZV0oq6Bnf6PdIroyIZXznMPU&usqp=CAU);
+    background-size: cover;
+    background-position: center;
+}
+
+#aot {
+    background-image: url(https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9daa2f17d7ad2727d72fdeaae6e232de.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#db-z {
+    background-image: url(https://criticalhits.com.br/wp-content/uploads/2021/05/Dragon-Ball-Super.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#fullmetal {
+    background-image: url(https://images5.alphacoders.com/902/thumb-1920-902387.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#naruto-shippuden {
+    background-image: url(https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/7add01c632a7aaf883a90d75b0154ab8.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#demon-slayer {
+    background-image: url(https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f7adcedd1d7c53ae18d851003a3cfae4.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#hunter-hunter {
+    background-image: url(https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/2e54344c7cc1675af721b4021222230f.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#jujutsu {
+    background-image: url(https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/98662d1c546c4e74de58fbc52679ac6c.jpeg);
+    background-size: cover;
+    background-position: center;
+}
