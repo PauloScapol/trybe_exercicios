@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1669129198636" clover="3.2.0">
+  <project timestamp="1669129198636" name="All files">
+    <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4" elements="17" coveredelements="17" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+    <file name="calculator.js" path="/home/pauloscapol/Trybe/Exercicios_Trybe/trybe_exercicios/M1_Fundamentos/S7_Introdução_a_JavaScript_ES6_e_Testes_Unitários/Dia_3_Matchers_e_Cobertura_de_Codigo/calculator.js">
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
