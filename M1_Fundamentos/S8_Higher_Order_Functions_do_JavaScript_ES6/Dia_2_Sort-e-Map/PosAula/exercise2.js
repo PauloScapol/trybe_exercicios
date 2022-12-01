@@ -63,6 +63,6 @@ const books = [
 
 // ---------- CRIAR UM ARRAY COM STRINGS NO FORMATO nome_da_pessoa_autora - data_de_nascimento ---------- //
 const formatedAuthorNamesBirth = () => {
-  return books.map((books) => (`${books.author.name} - ${books.author.birthYear}`));
+  return books.map((book) => (`${book.author.name} - ${book.author.birthYear}`));
 };
 console.log(formatedAuthorNamesBirth(books));
