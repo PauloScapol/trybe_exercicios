@@ -63,8 +63,8 @@ const books = [
   
 // ---------- CRIAR UM ARRAY QUE POSSUA APENAS OS NOMES DE TODAS AS PESSOAS AUTORAS DE FICÇÃO CIENTÍFICA OU FANTASIA, POR ORDEM ALFABÉTICA ---------- //
 const ficFantOrdAlfabetica = books
-.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica')
-.map((book) => book.author.name)
-.sort();
+  .filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica')
+  .map((book) => book.author.name)
+  .sort();
 
 console.log(ficFantOrdAlfabetica);
