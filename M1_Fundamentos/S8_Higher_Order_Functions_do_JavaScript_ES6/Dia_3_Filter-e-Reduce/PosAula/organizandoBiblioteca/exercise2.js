@@ -62,7 +62,9 @@ const books = [
 ];
   
 // ---------- FILTRAR OS LIVROS COM MAIS DE 60 ANOS DESDE SUA PUBLICAÇÃO E ORDENAR A PARTIR DO LIVRO MAIS VELHO AO MAIS NOVO ---------- //
+const currentYear = new Date().getFullYear();
+
 const maisSessenta = books
-  .filter((book) => book.releaseYear <= 1962)
+  .filter((book) => (currentYear - book.releaseYear) >= 60)
   .sort((a, b) => a.releaseYear - b.releaseYear);
 console.log(maisSessenta);
